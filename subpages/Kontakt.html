@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/subpages/old_style.css" />
+    <title>kontakt</title>
+  </head>
+  <body>
+    
+    <header class="container">
+      <!-- banner -->
+      <div class="banner_column">
+        <p>Lägga till ett kontaktformulär i ditt CV. Lägg till data som känns relevanta.</p>
+      <!-- End banner -->
+      </div>
+        <!-- header left -->
+        <div class="container h-left">
+          <!-- profilbild -->
+          <div class="profilbild item center">
+            <a href="index.html"><img src="img/profile_img.png" alt="profilbild" /></a>
+  
+            <!-- END profilbild -->
+          </div>
+          <!-- namn+efternamn -->
+          <div class="profilename item center">
+            <h1>Namn Efternamn</h1>
+            <!-- END namn+efternamn -->
+          </div>
+          <!-- END header left -->
+        </div>
+        <!-- header right -->
+        <div class="container h-right">
+          <!-- menu -->
+          <!-- nästlad lista -->
+          <ul class="menu center">
+            <li><a href="portfolio.html"> Portfolio</a></li>
+            <li><a href="tel:+46121231234">+46 12 123 1234</a></li>
+            <li><a href="mailto:me@example.com">me@example.com</a></li>
+            <li><a href="#">Kontakt</a></li>
+            <!--END nästlad lista -->
+          </ul>
+          <!-- END menu -->
+          <!-- END header right -->
+        </div>
+        <!-- END header -->
+      </header>
+      <!-- main -->
+      <main class="container_center">
+        <!-- Kontakt -->
+        <div class="item">        
+        <form action="Kontakt_destination.html" method="GET">
+            <fieldset>
+            <legend class="legend">Kontakt info</legend>
+            <!-- Företag -->
+            <div class="value">
+            <label class="" for="foretag">Företag</label>
+            <input class="size-1" type="text" id="foretag" name="foretag"  autofocus  required><abbr class="" title="nodvändig" aria-label="nödvändig">*</abbr>
+            </div>
+            <!-- webb -->
+            <div class="value">
+            <label for="webb">Webb</label>
+            <input class="size-1" type="url" id="webb" name="webb" placeholder="http://example.com" >
+            <span class="none">*</span>
+          </div>
+
+            <!-- namnn -->
+            <div class="value">
+            <label for="namn">Namn</label>
+            <input class="size-1" type="text" id="namn" name="namn" placeholder="Anders"  required><abbr title="nodvändig" aria-label="nödvändig">*</abbr>
+            
+          </div>
+            <!-- efternamn -->
+            <div class="value">
+            <label for="efternamn">
+            Efternamn</label>
+            <input class="size-1" type="text" id="efternamn" name="efternamn" placeholder="Andersson"  required><abbr title="nodvändig" aria-label="nödvändig">*</abbr>
+            
+          </div>
+            <!-- e-post -->
+            <div class="value">
+            <label for="e-post">E-post</label>
+            <input class="size-1" type="email" id="e-post" placeholder="email@domain.com" required><abbr title="nodvändig" aria-label="nödvändig">*</abbr>
+            
+          </div>
+            <!-- fritext -->
+        </fieldset>
+        <fieldset>
+            <legend class="legend">övrigt</legend>
+            <!-- textarea -->
+            <div class="value_ta">
+            <textarea class="size-1" name="meddelande" id="meddelande" cols="30" rows="10" placeholder="Skriv här"></textarea>
+          </div>
+          <!-- file upload -->
+          <div class="value_min">
+            <label for="filer" id="filer">
+                Fil(er)</label>
+                <input class="send" type="file" name="fil[]" accept="image/*,.pdf,.doc" multiple >
+                <p>här får du addera extra info för anställning: Vilkor, handledningsplan, projekt, osv.</p>
+            
+          </div>
+        </fieldset>
+        <fieldset>
+            <legend class="legend">jobba som</legend>
+            <!-- jobba som -->
+            <label class="reset_width" for="programmerare">
+            <input type="checkbox" id="programmerare" name="programmerare" value="rogrammerare">
+            programmerare
+            </label>
+            <label class="reset_width" for="webbspel">
+            <input type="checkbox" id="webbspel" name="webbspel" value="webbspel">
+            webbspel
+            </label>
+            <label class="reset_width" for="anvandbarhetsdesignerapp">
+            <input type="checkbox" id="anvandbarhetsdesignerapp" name="anvsndbarhetsdesignerapp" value="anvandbarhetsdesignerapp">
+            AnvändbarhetsDesignerApp
+            </label>
+            <label class="reset_width" for="apputvecklare">
+            <input type="checkbox" id="apputvecklare" name="apputvecklare" value="apputvecklare">
+            Apputvecklare
+            </label>
+            <label class="reset_width" for="frontend-utvecklare">
+            <input type="checkbox"
+            id="frontend-utvecklare" name="frontend-utvecklare" value="frontend-utvecklare">
+            Frontend-utvecklare
+            </label>
+            <label class="reset_width" for="interaktionsdesigner">
+            <input type="checkbox" id="interaktionsdesigner" name="interaktionsdesigner" value="interaktionsdesigner">
+            Interaktionsdesigner
+            </label>
+            <!-- END jobba som -->
+        </fieldset>
+            
+            <!-- vart -->
+        <fieldset>
+            <legend class="legend">vart</legend>
+            <label class="reset_width" for="stockholm">
+            <input type="radio" id="stockholm" name="vart" value="Stockholm">
+            Stockholm
+            </label>
+            <label class="reset_width" for="goteborg">
+            <input type="radio" id="goteborg" name="vart" value="Göteborg">
+            Göteborg
+            </label>
+            <label class="reset_width" for="hemifran">
+            <input type="radio" id="hemifran" name="vart" value="Hemifrån" checked>
+            Hemifrån
+            </label>    
+            <!-- END vart -->
+        </fieldset>
+        <fieldset>
+            <legend class="legend">Anställning</legend>
+            <!-- typ anställning -->
+            <div class="value">
+            <p>Typ anställning</p>
+            <select name="anstallning" id="anstellning">
+                <option value="heltid">heltid</option>
+                <option value="deltid">deltid</option>
+                <option value="tim-lon">tim-lön</option>
+            </select>
+            <!-- END typ anställning -->
+          </div>
+            <!-- när -->
+            <div class="value">
+            <label class="reset_width" for="nar-anstallning">
+            När skulle börja anställning
+            <input type="date" id="nar-anstallning" value="date-anstallning" name="date"  max="2020-12-01">
+            </label>
+            <!-- END när -->
+          </div>
+            <!-- Log när blev skickad -->
+            <input type="hidden" id="tidsstampel" name="tidsstampel" value="1286705410">
+            <!-- END Log när blev skickad -->
+
+        </fieldset>
+        <!-- skicka -->
+        <button class="send" type="submit">Skicka</button>
+        <!-- END skicka -->    
+            
+        </form>
+        
+        
+        <!-- END kontakt -->
+        </div>
+      </main>
+      <!-- footer -->
+      <footer class="">
+          <table  class="table">
+          <tr>
+          <!-- map -->
+          <td rowspan="4" class="map_celd">
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d130262.32411904851!2d17.83866050909386!3d59.327130047915716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f763d2cbf72e7%3A0x6e4138135c88d26e!2sStockholm!5e0!3m2!1ssv!2sse!4v1585746059328!5m2!1ssv!2sse"
+  
+            style="border:0;"
+            allowfullscreen=""
+            aria-hidden="false"
+            tabindex="0"
+          ></iframe>
+      </td>
+      <!-- END map -->
+          <!-- adress -->
+            <th>Adress
+                <!-- END adress -->
+          </th>
+  
+          <!-- made by -->
+          <td  rowspan="4" class="table_right">
+          <p>Made by</p>
+          <h3><a href="xavidiaz.com">Xavidiaz</a></h3>
+        </td>
+          <!-- END made by -->
+        </tr>
+        <tr>
+        <td>
+            namngatan,
+            45
+        </td>
+        </tr>
+        <tr>
+          <td>
+          Postord, 123 34
+        </td>
+        </tr>
+        <tr>
+          <td>
+        </td>
+        </tr>
+          </table>
+        </div>
+        <!-- END footer -->
+      </footer>    
+  </body>
+</html>

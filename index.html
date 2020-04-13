@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <title>CV</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header id="header" class="header">
+      <div class="box profilbild">
+        <div class="topnav">
+          <a class="left" href="index.html"
+            ><img
+              src="https://cdn.glitch.com/11b6d87c-570f-4d47-aa7f-35ddba6ac20b%2Fprofile_img.png?v=1586682681034"
+              alt="profilbild"
+            />
+          </a>
+          <a class="bold" href="index.html">Namn Efternamn</a>
+        </div>
+      </div>
+      <div class="box meny">
+        <!-- menu -->
+        <div class="topnav" id="nav-menu">
+          <a href="javascript:void(0);" class="icon" onclick="mMenu(); fullHeader()">
+            <img
+              src="https://cdn.glitch.com/11b6d87c-570f-4d47-aa7f-35ddba6ac20b%2Fmenu.svg?v=1586693665219"
+              alt="menu-ico"
+            />
+          </a>
+          <a href="subpages/portfolio.html" class="hide grow-1">Portfolio</a>
+          <a class="hide grow-1" href="tel:+46121231234">+46 12 123 1234</a>
+          <a class="hide grow-1" href="mailto:me@example.com">me@example.com</a>
+          <a class="hide grow-1" href="subpages/Kontakt.html">Kontakt</a>
+        </div>
+
+        <!-- END menu -->
+      </div>
+      <!-- END HEADER -->
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- MAIN DIV -->
+      <div class="box main">
+        <!-- Presentation -->
+        <div class="item">
+          <h2>Presentation</h2>
+        </div>
+
+        <!-- video -->
+        <div class="video-wrapper">
+          <iframe
+            class="youtube"
+            src="https://www.youtube.com/embed/2sZgesDe-ME"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <!-- END video -->
+        </div>
+
+        <!-- presentation av mig själv MP3-->
+        <div class="audio">
+          <h3>Ljud</h3>
+          <audio
+            controls
+            src="audio/presentationarbetsgivare.mp3"
+            type="audio/mpeg"
+          ></audio>
+          <!-- END presentation av mig själv MP3-->
+        </div>
+
+        <!-- text -->
+        <h3>Text</h3>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only
+          five centuries, but also the leap into electronic typesetting,
+          remaining essentially unchanged. It was popularised in the 1960s with
+          the release of Letraset sheets containing Lorem Ipsum passages, and
+          more recently with desktop publishing software like Aldus PageMaker
+          including versions of Lorem Ipsum.
+        </p>
+        <!-- END text -->
+        <!-- END Presentation -->
+
+        <!-- Jag vill jobba som -->
+        <h2>Jag vill jobba som</h2>
+        <!-- nästlad lista -->
+        <ul class="work-like">
+          <li>Programmerare</li>
+          <li>webbspel</li>
+          <li>AnvändbarhetsdesignerApp</li>
+          <li>Apputvecklare</li>
+          <li>Frontend-utvecklare</li>
+          <li>Interaktionsdesigner</li>
+          <!--END nästlad lista -->
+        </ul>
+        <!-- END jag vill jobba som -->
+
+        <!-- Jag vill jobba i -->
+        <h2>Jag vill jobba i</h2>
+        <p>
+          Stockholm eller hemifrån Lorem Ipsum is simply dummy text of the
+          printing and typesetting industry. Lorem Ipsum has been the industry's
+          standard dummy text ever since the 1500s, when an unknown printer took
+          a galley of type and scrambled it to make a type specimen book. It has
+          survived not only five centuries, but also the leap into electronic
+          typesetting, remaining essentially unchanged. It was popularised in
+          the 1960s with the release of Letraset sheets containing Lorem Ipsum
+          passages, and more recently with desktop publishing software like
+          Aldus PageMaker including versions of Lorem Ipsum.
+        </p>
+        <!-- END Jag vill jobba i -->
+
+        <!-- END MAIN DIV -->
+      </div>
+      <!-- END MAIN -->
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <!-- footer 1 -->
+      <div class="box footer_1">
+        <!-- map -->
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d130262.32411904851!2d17.83866050909386!3d59.327130047915716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f763d2cbf72e7%3A0x6e4138135c88d26e!2sStockholm!5e0!3m2!1ssv!2sse!4v1585746059328!5m2!1ssv!2sse"
+          style="border:0;"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+        <!-- END map -->
+        <!-- footer 1 -->
+      </div>
+
+      <!-- footer 2 -->
+      <div class="box footer_2">
+        <!-- adress -->
+        <table style="width:100%">
+          <tr>
+            <th>Adress</th>
+          </tr>
+          <tr>
+            <td>Namngatan,</td>
+            <td class="right">45.</td>
+          </tr>
+          <tr>
+            <td>Postord,</td>
+            <td class="right">123 34</td>
+          </tr>
+          <tr>
+            <td>Sweden</td>
+          </tr>
+          <!-- END adress -->
+        </table>
+
+        <!-- END footer 2 -->
+      </div>
+
+      <!-- footer 3 -->
+      <div class="box footer_3">
+        <!-- END footer 3 -->
+      </div>
+
+      <!-- END FOOTER -->
+    </footer>
+    
+    <div class="box madeBy">
+    <!-- made by -->
+        <p>Made by
+        <h3><a href="xavidiaz.com">Xavidiaz</a></h3>
+      </p>
+        <!-- END made by -->
+    </div>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div
+      class="glitchButton"
+      style="position: fixed; top: 20px; right: 20px;"
+    ></div>
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
+</html>
